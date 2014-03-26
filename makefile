@@ -3,4 +3,4 @@ CXXFLAGS=-g
 LNFLAGS=-lncurses
 
 all:
-	g++ $(LNFLAGS) $(CXXFLAGS) main.cpp -o $(OUTPUT_NAME)
+	g++ $(LNFLAGS) $(CXXFLAGS) main.cpp -o $(OUTPUT_NAME) -O3

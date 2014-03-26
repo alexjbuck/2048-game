@@ -108,7 +108,6 @@ class Game {
 		success |= up();
 		success |= combine(KEY_UP,TRUE);
 		print();
-		sleep(1);
 		success |= up();
 		return success;
 	}
@@ -140,7 +139,6 @@ class Game {
 		success |= down();
 		success |= combine(KEY_DOWN,TRUE);
 		print();
-		sleep(1);
 		success |= down();
 		return success;
 	}
@@ -173,7 +171,6 @@ class Game {
 		success |= left();
 		success |= combine(KEY_LEFT,TRUE);
 		print();
-		sleep(1);
 		success |= left();
 		return success;
 	}
@@ -203,7 +200,6 @@ class Game {
 		success |= right();
 		success |= combine(KEY_RIGHT,TRUE);
 		print();
-		sleep(1);
 		success |= right();
 		return success;
 	}
@@ -335,6 +331,7 @@ class Game {
 	}
 
 	void update() {
+		usleep(250000);
 		addRand();
 		print();
 	}
